@@ -6,7 +6,7 @@ import Ring from "./Ring";
 import Elipse from "./Elipse";
 import Pointer from "./Pointer";
 
-function Logo({ color = "black" }) {
+function Logo({ color = "white" }) {
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
@@ -16,14 +16,14 @@ function Logo({ color = "black" }) {
   }, []);
 
   return (
-    <div className="h-screen pt-20">
+    <div className="flex justify-center mb-8">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 460 460"
         preserveAspectRatio="xMidYMid meet"
         style={{
-          width: "36vmin",
-          height: "36vmin",
+          width: "24vmin",
+          height: "24vmin",
         }}
       >
         <Circle />
