@@ -45,7 +45,7 @@ export default function Page() {
           metadata: {
             beta: 1.1,
             sector: "Consumer Cyclical",
-            stock_display_name: "Alphabet Inc.",
+            stock_display_name: "Starbucks",
           },
         },
         {
@@ -113,6 +113,7 @@ export default function Page() {
       children: sector.holdings.map((holding: any) => ({
         name: holding.metadata.stock_display_name,
         value: holding.num_of_shares * holding.avg_price_per_share,
+        ticker: holding.stock_id,
       })),
     })
   }

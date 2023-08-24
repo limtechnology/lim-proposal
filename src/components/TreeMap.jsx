@@ -7,6 +7,9 @@ const TreeMap = ({ data }) => (
         identity="name"
         value="value"
         valueFormat=".02s"
+        label={(node) => {
+            return `${node.data?.ticker}  ${node.formattedValue}`;
+        }}
         margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
         labelSkipSize={12}
         labelTextColor={{

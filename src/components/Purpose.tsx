@@ -48,7 +48,7 @@ const Purpose = () => {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {purposes.map((feature) => (
-                <div key={feature.name} className="flex flex-col">
+                <div key={feature.name} className="flex flex-col bg-white/60 p-8 rounded">
                   <dt className="text-base font-semibold leading-7 text-black">
                     <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-[#383839]">
                       <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
