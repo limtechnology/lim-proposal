@@ -118,7 +118,7 @@ export default function Page() {
   }
 
   return (
-    <div class="font-mono">
+    <div className="font-mono">
       <Section className="fill-white bg-[#383839]">
         <div>
           <AnimatedLogo />
