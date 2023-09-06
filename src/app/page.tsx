@@ -175,7 +175,7 @@ export default function Page() {
           <BarChart data={barChartData} />
         </div>
         <p className="text-white max-w-4xl text-lg">
-        In your investment portfolio, we, at LIM, have strategically allocated funds to three key sectors. As per our investment decisions, your investments in the 'Technology' sector currently stand at $1,300,000, significantly exceeding the standard S&P sector allocation of $650,000. Likewise, in the 'Consumer Cyclical' sector, we've directed $1,500,000, surpassing the S&P's $750,000 allocation. Lastly, in the 'Automotive' sector, we've invested $700,000, diverging from the S&P's typical allocation of $350,000. These allocations reflect our distinct investment strategy, tailored to your financial objectives, which may differ from the standard S&P sector allocations.
+        In your investment portfolio, we, at LIM, have strategically allocated funds to three key sectors. As per our investment decisions, your investments in the &aposTechnology&apos sector currently stand at $1,300,000, significantly exceeding the standard S&P sector allocation of $650,000. Likewise, in the &aposConsumer Cyclical&apos sector, we&aposve directed $1,500,000, surpassing the S&P&aposs $750,000 allocation. Lastly, in the &aposAutomotive&apos sector, we&aposve invested $700,000, diverging from the S&P&aposs typical allocation of $350,000. These allocations reflect our distinct investment strategy, tailored to your financial objectives, which may differ from the standard S&P sector allocations.
         </p>
       </Section>
       <Section className=" bg-[#f2eee8] flex flex-col">
