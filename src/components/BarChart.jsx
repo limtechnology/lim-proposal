@@ -5,18 +5,17 @@ const BarChart = ({ data, layout="horizontal"}) => (
     <ResponsiveBar
         data={data}
         keys={[
+            'sp',
             'amount'
         ]}
         valueFormat={(e)=>e.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
-        className="test"
         layout={layout}
         indexBy="sector"
         margin={{ top: 50, right: 130, bottom: 50, left: 120 }}
         padding={0.3}
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
-        colors={{ scheme: 'spectral' }}
-        colorBy="indexValue"
+        colors={{ scheme: 'nivo' }}
         borderColor={{
             from: 'color',
             modifiers: [
@@ -26,6 +25,15 @@ const BarChart = ({ data, layout="horizontal"}) => (
                 ]
             ]
         }}
+        theme={{
+            axis: {
+                ticks: {
+                    text: {
+                        fill: "#ffffff"
+                    }
+                }
+            }
+        }}
         axisTop={null}
         axisRight={null}
         axisBottom={null}
@@ -34,19 +42,12 @@ const BarChart = ({ data, layout="horizontal"}) => (
             tickPadding: 5,
             tickRotation: 0,
             legendPosition: 'middle',
-            legendOffset: -40
+            legendOffset: -40,
+            fill: "#ffffff",
         }}
         labelSkipWidth={12}
         labelSkipHeight={12}
-        labelTextColor={{
-            from: 'color',
-            modifiers: [
-                [
-                    'darker',
-                    1.6
-                ]
-            ]
-        }}
+        labelTextColor={"#ffffff"}
         legends={[]}
         role="application"
         ariaLabel="LIM bar chart"

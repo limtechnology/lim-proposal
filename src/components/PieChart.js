@@ -11,11 +11,11 @@ const PieChart = ({ data }) => (
     <ResponsivePie
         data={data}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-        innerRadius={0.2}
+        innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
         activeOuterRadiusOffset={8}
-        colors={{ scheme: 'category10' }}
+        colors={{ scheme: 'nivo' }}
         borderWidth={1}
         borderColor={{
             from: 'color',
@@ -26,7 +26,8 @@ const PieChart = ({ data }) => (
                 ]
             ]
         }}
-        valueFormat={(value) => formatter.format(value)}
+        enableArcLinkLabels={false}
+        valueFormat=".02s"
         arcLinkLabelsSkipAngle={10}
         arcLinkLabelsTextColor="#333333"
         arcLinkLabelsThickness={2}
@@ -111,7 +112,7 @@ const PieChart = ({ data }) => (
                 id: 'lines'
             }
         ]}
-        legends={[
+        legendsOld={[
             {
                 anchor: 'top-right',
                 direction: 'column',
